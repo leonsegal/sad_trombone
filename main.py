@@ -10,7 +10,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(pir, GPIO.IN)
 GPIO.setup(led, GPIO.OUT)
 
-files = glob.glob("./*.mp3")
+files = glob.glob("/home/pi/sad_trombone/*.mp3")
 
 if len(files) == 0:
     # todo: flash led
